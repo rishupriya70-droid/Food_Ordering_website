@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crave | Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">🍊 Crave.</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="active-link" href="menu.html">Menu</a>
+      <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+      <a href="orders.html">My Orders</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="menu-section">
+      <div class="section-heading">
+        <p class="tag">MADE FRESH FOR YOU</p>
+        <h1 class="page-title">Explore Our Menu 🍽️</h1>
+        <p>Find something delicious for your next meal.</p>
+      </div>
+
+      <input
+        type="search"
+        id="search"
+        class="search-box"
+        placeholder="🔍 Search pizza, burger, pasta..."
+        aria-label="Search food">
+
+      <div class="categories">
+        <button class="category active" data-category="All">All Foods</button>
+        <button class="category" data-category="Pizza">🍕 Pizza</button>
+        <button class="category" data-category="Burger">🍔 Burger</button>
+        <button class="category" data-category="Pasta">🍝 Pasta</button>
+        <button class="category" data-category="Dessert">🍰 Dessert</button>
+        <button class="category" data-category="Drinks">🥤 Drinks</button>
+      </div>
+
+      <div id="food-grid" class="food-grid"></div>
+
+      <p id="no-results" class="empty-message" hidden>
+        No food items found. Try another search!
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <h2>🍊 Crave.</h2>
+    <p>Good food. Good mood. Always.</p>
+    <p>© 2026 Crave Food Ordering</p>
+  </footer>
+</body>
+</html>

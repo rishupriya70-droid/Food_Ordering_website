@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crave | My Orders</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">🍊 Crave.</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+      <a class="active-link" href="orders.html">My Orders</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="orders-section">
+      <div class="section-heading">
+        <p class="tag">YOUR FOOD JOURNEY</p>
+        <h1 class="page-title">My Orders 📦</h1>
+        <p>Take a look at the orders you've placed.</p>
+      </div>
+
+      <div id="orders-list" class="orders-list"></div>
+
+      <div id="no-orders" class="empty-state" hidden>
+        <div class="empty-icon">🍽️</div>
+        <h2>No orders yet!</h2>
+        <p>Your delicious journey starts with your first order.</p>
+        <a class="primary-btn" href="menu.html">Order Food</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h2>🍊 Crave.</h2>
+    <p>Good food. Good mood. Always.</p>
+    <p>© 2026 Crave Food Ordering</p>
+  </footer>
+</body>
+</html>

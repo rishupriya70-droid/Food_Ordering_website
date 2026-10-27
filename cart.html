@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crave | My Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">🍊 Crave.</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a class="active-link" href="cart.html">
+        Cart (<span class="cart-count">0</span>)
+      </a>
+      <a href="orders.html">My Orders</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart-section">
+      <div class="section-heading">
+        <p class="tag">ALMOST THERE!</p>
+        <h1 class="page-title">Your Shopping Cart 🛒</h1>
+        <p>Review your delicious choices.</p>
+      </div>
+
+      <div class="cart-container">
+        <div id="cart-items"></div>
+
+        <div id="cart-summary" hidden>
+          <div class="cart-total">
+            <span>Total Amount</span>
+            <span id="cart-total">₹0</span>
+          </div>
+          <button id="checkout-btn" class="primary-btn">
+            Place Order →
+          </button>
+        </div>
+
+        <div id="empty-cart" class="empty-state" hidden>
+          <div class="empty-icon">🛒</div>
+          <h2>Your cart is empty!</h2>
+          <p>Looks like you haven't added any food yet.</p>
+          <a class="primary-btn" href="menu.html">Explore Menu</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h2>🍊 Crave.</h2>
+    <p>Good food. Good mood. Always.</p>
+    <p>© 2026 Crave Food Ordering</p>
+  </footer>
+</body>
+</html>
